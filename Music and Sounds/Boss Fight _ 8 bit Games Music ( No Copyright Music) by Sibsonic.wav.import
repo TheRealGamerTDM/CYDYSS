@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Boss Fight _ 8 bit Games Music ( No Copyright Music) by Sibsonic.wav-33b82ee09d5108f521019adf32421efc.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/Boss Fight _ 8 bit Games Music ( No Copyright Music) by Sibsonic.wav"
+dest_files=[ "res://.import/Boss Fight _ 8 bit Games Music ( No Copyright Music) by Sibsonic.wav-33b82ee09d5108f521019adf32421efc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

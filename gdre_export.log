@@ -1,0 +1,66 @@
+GDRE Tools v2.5.0-beta.5
+Windows 10.0.26200, NVIDIA GeForce RTX 3050, vulkan
+Opening file: C:/Users/runyo/Downloads/New folder/CYDYSS.pck
+Unicode parsing error: Byte a0 is not a correct continuation byte after ed
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (a0)
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (bd)
+Unicode parsing error: Byte bb is not a correct continuation byte after ed
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (bb)
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (a3)
+Unicode parsing error: Byte a0 is not a correct continuation byte after ed
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (a0)
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (bd)
+Unicode parsing error: Byte bb is not a correct continuation byte after ed
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (bb)
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (a3)
+Multiple passing candidates for bytecode version 13:
+3.5.0-stable (a7aad78), 3.2.0-stable (5565f55)
+Choosing only one that matches engine version: 3.2.0-stable (5565f55).
+Unicode parsing error: Byte a0 is not a correct continuation byte after ed
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (a0)
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (bd)
+Unicode parsing error: Byte bb is not a correct continuation byte after ed
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (bb)
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (a3)
+Unicode parsing error: Byte a0 is not a correct continuation byte after ed
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (a0)
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (bd)
+Unicode parsing error: Byte bb is not a correct continuation byte after ed
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (bb)
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (a3)
+Unicode parsing error: Byte a0 is not a correct continuation byte after ed
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (a0)
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (bd)
+Unicode parsing error: Byte bb is not a correct continuation byte after ed
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (bb)
+Unicode parsing error, some characters were replaced with � (U+FFFD): Invalid UTF-8 leading byte (a3)
+Loaded 102 imported files
+Detected Engine Version: 3.4.2
+Detected Bytecode Revision: 3.2.0-stable (5565f55)
+Verified 284 files, no errors detected!
+Extracted 284 files, no errors detected!
+Saved project config.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     43
+Failed scripts:                         0
+Imported resources for export session:  102
+Successfully converted:                 102
+Lossy:                                  0
+Rewrote metadata:                       0
+Non-importable conversions:             0
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 3.4.2 to edit the project.
+
+*******************************************************************************
+

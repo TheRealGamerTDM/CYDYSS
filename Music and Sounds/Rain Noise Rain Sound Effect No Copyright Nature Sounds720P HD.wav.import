@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Rain Noise Rain Sound Effect No Copyright Nature Sounds720P HD.wav-d71cab01e69dc5dd69af6860a6a14e61.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/Rain Noise Rain Sound Effect No Copyright Nature Sounds720P HD.wav"
+dest_files=[ "res://.import/Rain Noise Rain Sound Effect No Copyright Nature Sounds720P HD.wav-d71cab01e69dc5dd69af6860a6a14e61.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

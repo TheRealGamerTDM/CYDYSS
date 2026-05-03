@@ -1,0 +1,527 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Menu.gd" type="Script" id=1]
+[ext_resource path="res://UI/TitleScreen.png" type="Texture" id=2]
+[ext_resource path="res://Music and Sounds/8Bit Boss Chiptune - Boss Theme - Sawsquarenoise · Free Copyright-Safe Music.wav" type="AudioStream" id=3]
+[ext_resource path="res://04B_31__.TTF" type="DynamicFontData" id=4]
+[ext_resource path="res://World/Rain.png" type="Texture" id=5]
+[ext_resource path="res://Music and Sounds/Rain Noise Rain Sound Effect No Copyright Nature Sounds720P HD.wav" type="AudioStream" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 7
+font_data = ExtResource( 4 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 14
+font_data = ExtResource( 4 )
+
+[sub_resource type="Theme" id=4]
+default_font = SubResource( 3 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 12, 21 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 5 )
+region = Rect2( 12, 0, 12, 21 )
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ SubResource( 5 ), SubResource( 6 ) ],
+"loop": true,
+"name": "animate",
+"speed": 5.0
+} ]
+
+[node name="Menu" type="Control"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
+margin_right = 320.0
+margin_bottom = 180.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = -68.0
+margin_right = 81.0
+margin_bottom = -8.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+margin_top = 10.0
+margin_right = 73.0
+margin_bottom = 24.0
+focus_neighbour_top = NodePath("../QuitButton")
+mouse_default_cursor_shape = 2
+theme = SubResource( 2 )
+text = "Start"
+flat = true
+align = 0
+expand_icon = true
+
+[node name="QuitButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+margin_top = 28.0
+margin_right = 73.0
+margin_bottom = 49.0
+focus_neighbour_bottom = NodePath("../StartButton")
+mouse_default_cursor_shape = 2
+theme = SubResource( 4 )
+text = "Quit"
+flat = true
+align = 0
+expand_icon = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 16, 24 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 40, 56 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 64, 32 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 16, 80 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite5" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 16, 56 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite6" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 40, 24 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite7" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 40, 80 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite38" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 40, 40 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite39" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 16, 40 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite40" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 16, 8 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite41" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 40, 8 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite42" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 64, 80 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite44" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 232, 16 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite45" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 256, 16 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite46" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 280, 16 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite47" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 280, 104 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite48" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 216, 96 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite8" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 64, 56 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite9" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 64, 96 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite10" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 240, 112 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite11" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 240, 80 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite12" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 232, 32 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite13" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 280, 32 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite14" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 280, 120 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite51" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 304, 120 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite52" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 304, 96 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite53" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 304, 72 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite54" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 304, 48 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite55" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 304, 24 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite56" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 304, 8 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite15" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 280, 80 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite16" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 240, 56 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite17" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 280, 56 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite18" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 256, 32 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite19" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 256, 64 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite20" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 256, 96 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite21" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 256, 120 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite24" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 88, 40 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite25" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 88, 64 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite31" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 88, 88 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite32" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 88, 104 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite43" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 144, 40 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite49" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 144, 56 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite50" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 176, 40 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite57" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 176, 56 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite58" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 160, 56 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite59" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 160, 32 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite60" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 160, 16 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite61" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 120, 32 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite62" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 208, 32 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite63" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 216, 56 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite64" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 192, 32 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite65" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 192, 8 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite66" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 104, 16 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite67" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 104, 40 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite68" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 104, 56 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite26" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 88, 16 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite27" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 64, 8 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite28" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 144, 16 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite29" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 120, 16 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite30" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 176, 16 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite33" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 216, 112 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite34" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 216, 72 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite35" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 208, 16 )
+frames = SubResource( 7 )
+animation = "animate"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite36" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 16, 104 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AnimatedSprite37" type="AnimatedSprite" parent="CanvasLayer"]
+position = Vector2( 40, 104 )
+frames = SubResource( 7 )
+animation = "animate"
+playing = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -12.735
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -0.218
+autoplay = true
+
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]

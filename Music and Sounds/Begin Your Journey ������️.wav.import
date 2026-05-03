@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Begin Your Journey Ì†ΩÌª£Ô∏è.wav-ded0f69bb389b05be1dc58c2963f7422.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/Begin Your Journey Ì†ΩÌª£Ô∏è.wav"
+dest_files=[ "res://.import/Begin Your Journey Ì†ΩÌª£Ô∏è.wav-ded0f69bb389b05be1dc58c2963f7422.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
